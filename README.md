@@ -4,10 +4,9 @@
 - `app.py`: dashboard Streamlit (5 halaman)
 - `tuner_core.py`: fungsi inti dari notebook (DTW, fitur, YIN, f0 harmonik, rakit chord, statistik, pipeline analisis)
 - `requirements.txt`: library yang dibutuhkan
-- `.streamlit/config.toml`: tema warna (desain A, Studio Terang)
 
 ## Cara menjalankan
-1. Salin `app.py`, `tuner_core.py`, `requirements.txt`, dan folder `.streamlit/` ke folder project, sejajar dengan
+1. Salin `app.py`, `tuner_core.py`, `requirements.txt` ke folder project, sejajar dengan
    `nsynth-valid/` dan `nsynth-test/` (atau kedua file `.tar.gz`-nya).
 2. Pasang library (sekali): `pip install -r requirements.txt`
 3. Jalankan: `streamlit run app.py`
@@ -22,6 +21,6 @@ Halaman 4 dan 5 memakai `st.audio_input` (Streamlit >= 1.40). Izinkan akses mikr
 meminta. Bila mikrofon tidak bisa dipakai, unggah file WAV.
 
 ## Deploy online (opsional)
-Unggah `app.py`, `tuner_core.py`, `requirements.txt`, `.streamlit/config.toml`, dan `hasil_analisis.pkl` ke GitHub, lalu deploy di
+Unggah `app.py`, `tuner_core.py`, `requirements.txt`, dan `hasil_analisis.pkl` ke GitHub, lalu deploy di
 Streamlit Community Cloud. Data NSynth tidak perlu ikut diunggah karena hasil analisis dan template
 sudah tersimpan di `hasil_analisis.pkl`.
